@@ -10,26 +10,30 @@
 
 .MTitle {
   margin-top: 24px;
+  margin-bottom: 12PX;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* #endregion base */
 
 /* #region lenta */
+body {
+  width: 90%;
+  margin: 0 auto;
+}
 
 .lenta {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
-
-  
   margin: 0 auto;
   padding: 5px;
-
   border: 1px solid black;
-  width: 500px;
-  height: 100vh;
+  
+  height: 70vh;
+  overflow-y: auto;
 }
 
 /* #region block */
@@ -39,6 +43,7 @@
   justify-content: space-between;
   text-align: justify;
 
+  width: 100%;
   padding: 5px;
   border: 1px solid red;
 }
@@ -54,3 +59,53 @@
 /* #endregion block */
 
 /* #endregion lenta */
+
+/* #region message form */
+.message-form-container {
+  display: flex;
+  justify-content: center;
+
+  margin: 0 auto;
+
+  padding: 10px;
+  margin-top: 12px;
+
+  border: 1px solid #ccc;
+  /* width: 500px; */
+}
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+  
+  gap: 10px;
+  width: 100%;
+}
+
+.name-input, .message-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+.message-input {
+  height: 100px;
+  resize: none;
+}
+
+.message-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+
+.message-button:hover {
+  background-color: #0056b3;
+}
+/* #endregion message form */
