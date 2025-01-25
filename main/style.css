@@ -1,0 +1,55 @@
+/* #region base */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+.MTitle {
+  margin-top: 24px;
+  text-align: center;
+}
+
+/* #endregion base */
+
+/* #region lenta */
+
+.lenta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  
+  margin: 0 auto;
+  padding: 5px;
+
+  border: 1px solid black;
+  width: 500px;
+  height: 100vh;
+}
+
+/* #region block */
+.lenta__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 5px;
+  border: 1px solid red;
+}
+
+.block__top_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block__data {
+  margin: auto 0;
+}
+/* #endregion block */
+
+/* #endregion lenta */
