@@ -8,14 +8,16 @@
 </head>
 <body>
   <h1 class="MTitle">Welcome on MBook!</h1>
-  <div class="lenta">
-    <div class="lenta__block">
-      <div class="block__top_info">
-        <h2 class="block__name">BLAZE</h2>
-        <h3 class="block__data">25.01.25</h3>
-      </div>
-      <p class="block__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi optio velit soluta odio doloremque facere sit voluptate repellendus deleniti temporibus voluptates officiis sunt quia sapiente, voluptatibus a! Nisi, eius placeat.</p>
-    </div>
+  <div class="lenta" id="lenta"></div>
+
+  <div class="message-form-container">
+    <form id="messageForm" class="message-form">
+      <input id="nameInput" class="name-input" type="text" placeholder="Your name [optional]">
+      <textarea id="messageInput" class="message-input" placeholder="Your text..." required></textarea>
+      <button type="submit" class="message-button">BOOK</button>
+    </form>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
